@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false ,
       routes: Routes.getRoute(),
+      // ignore: missing_return
       onGenerateRoute: (RouteSettings settings ){
               final List<String> pathElements = settings.name.split('/');
                 if(pathElements[1].contains('detail')){
